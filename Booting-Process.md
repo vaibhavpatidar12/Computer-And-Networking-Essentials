@@ -89,6 +89,7 @@ The booting process refers to the sequence of steps a computer system follows to
 
 ## Booting Process Diagram
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/f34b7ff3-3928-41ae-9cd4-e3e14a7172c5)
+
 
 ---
