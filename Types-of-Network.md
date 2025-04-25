@@ -1,72 +1,69 @@
 # Types of Networks
 
-## 1. Personal Area Network (PAN)
-A PAN is the smallest network type, used for personal devices such as smartphones, tablets, and wearables. It typically covers a range of a few meters.
+# **Types of Computer Networks**
 
-### Examples:
-- Bluetooth connections
-- Infrared connections
-- Zigbee networks
+### 1. **Personal Area Network (PAN)**
+   - **Range**: 1 to 100 meters.
+   - **Speed**: Very high.
+   - **Technologies**: Bluetooth, Zigbee, IrDA.
+   - **Example**: USB devices, smartphones, tablets, and printers.
+   - **Use**: Communication between devices in a single person's workspace.
+   
+   ![PAN](https://media.geeksforgeeks.org/wp-content/uploads/20210501203401/Screenshot207.png)
 
-## 2. Local Area Network (LAN)
-A LAN connects devices within a limited area such as a home, office, or campus. It is commonly used for high-speed data sharing and communication.
+### 2. **Local Area Network (LAN)**
+   - **Range**: Up to 2 km.
+   - **Speed**: Very high.
+   - **Technologies**: Ethernet, Wi-Fi.
+   - **Example**: Networks in homes, offices, schools.
+   - **Use**: Connects computers within a limited geographical area.
+   
+   ![LAN](https://media.geeksforgeeks.org/wp-content/uploads/20210502003635/Screenshot228.png)
 
-### Examples:
-- Ethernet networks
-- Wi-Fi networks within a home or office
+### 3. **Campus Area Network (CAN)**
+   - **Range**: 1 km to 5 km.
+   - **Speed**: Very high.
+   - **Technologies**: Ethernet.
+   - **Example**: Networks in schools, college campuses, office buildings.
+   - **Use**: Covers several buildings within a campus area.
+   
+   ![CAN](https://media.geeksforgeeks.org/wp-content/uploads/20230317132848/can.png)
 
-## 3. Metropolitan Area Network (MAN)
-A MAN spans a city or a large campus, providing network connectivity to multiple LANs.
+### 4. **Metropolitan Area Network (MAN)**
+   - **Range**: 5 km to 50 km.
+   - **Speed**: Average.
+   - **Technologies**: FDDI, ATM, CDDI.
+   - **Example**: Networking in a city, town, or large urban area.
+   - **Use**: Connects computers over a metropolitan area.
+   
+   ![MAN](https://media.geeksforgeeks.org/wp-content/uploads/20230317133048/man.png)
 
-### Examples:
-- City-wide Wi-Fi
-- Cable TV networks
+### 5. **Wide Area Network (WAN)**
+   - **Range**: Above 50 km.
+   - **Speed**: Very low.
+   - **Technologies**: Leased-line, Dial-up.
+   - **Example**: The Internet.
+   - **Use**: Connects networks over large geographical distances.
 
-## 4. Wide Area Network (WAN)
-A WAN covers large geographical areas, often connecting multiple LANs and MANs.
+   ![WAN](https://media.geeksforgeeks.org/wp-content/uploads/20210501212445/Screenshot209.png)
 
-### Examples:
-- The Internet
-- Corporate networks spanning multiple locations
+---
 
-## 5. Wireless Local Area Network (WLAN)
-A WLAN is similar to a LAN but uses wireless communication instead of wired connections.
+## **Comparison Between Different Computer Networks**
 
-### Examples:
-- Home Wi-Fi networks
-- Public Wi-Fi hotspots
+| Network Type      | Range                 | Speed          | Maintenance Cost | Examples            |
+|-------------------|-----------------------|----------------|------------------|---------------------|
+| **PAN**           | 1 to 100 meters       | Very high      | Low              | Bluetooth devices   |
+| **LAN**           | Up to 2 km            | Very high      | Low              | Home, office, school|
+| **CAN**           | 1 km to 5 km          | Very high      | Moderate         | College campus      |
+| **MAN**           | 5 km to 50 km         | Average        | High             | City networks       |
+| **WAN**           | Above 50 km           | Very low       | Very high        | Internet            |
 
-## 6. Storage Area Network (SAN)
-A SAN is a high-speed network designed for data storage and retrieval, typically used in enterprise environments.
+---
 
-### Examples:
-- Fibre Channel SAN
-- iSCSI SAN
+By following these steps and principles, computer networks enable seamless communication and data exchange among devices, whether they are located within the same room or thousands of miles apart.
 
-## 7. Virtual Private Network (VPN)
-A VPN extends a private network across a public network, allowing secure data transmission.
+---
 
-### Examples:
-- Secure remote access for employees
-- Encrypted communication over the internet
 
-## 8. Enterprise Private Network (EPN)
-An EPN is a private network built by organizations to securely connect different branches and offices.
-
-### Examples:
-- Corporate intranet
-- Secure connections between company locations
-
-## 9. Campus Area Network (CAN)
-A CAN is a network that connects multiple LANs within a specific campus or educational institution.
-
-### Examples:
-- University network infrastructure
-- Industrial complex network
-
-## 10. Home Area Network (HAN)
-A HAN connects devices within a home environment, including smart home appliances.
-
-### Examples:
-- Smart home automation
-- IoT-based home systems
+ by [Tanush Kushwah](https://www.linkedin.com/in/tanush-kushwah-b51a97319/?originalSubdomain=in)
