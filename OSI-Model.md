@@ -1,157 +1,96 @@
+## **OSI Model (Open Systems Interconnection)**
+The OSI model serves as a standard reference framework for understanding and designing communication systems. It provides a clear separation of functionality between layers, allowing for interoperability between different devices and network architectures.
 
 
-# 🧠 **What Is the OSI Model?**
 
-The **Open Systems Interconnection (OSI)** model is a **7-layer framework** used to understand how data travels from one device to another in a network.
+### **7. Application Layer**
 
-> 📅 **Introduced:** 1983  
-> 🌐 **Standardized by:** ISO (1984)
+The Application Layer is the topmost layer of the OSI model. It enables end users to interact with the network and access services such as file sharing, email, and web browsing. This layer provides services and interfaces to user applications, facilitating data exchange and enabling network communication.
 
-Even though modern networks use the **TCP/IP model**, **The OSI model is a reference model used for understanding and designing network architecture, designing networks, and learning how communication works.**
+**Examples of Application Layer protocols include:**
 
----
+* **HTTP (Hypertext Transfer Protocol):** Port 80 (HTTP), Port 443 (HTTPS)
+* **FTP (File Transfer Protocol):** Port 20 (FTP Data), Port 21 (FTP Control)
+* **SMTP (Simple Mail Transfer Protocol):** Port 25
+* **DNS (Domain Name System):** Port 53
+* **SSH (Secure Shell):** Port 22
+* **Telnet:** Port 23
+* **POP3 (Post Office Protocol):** Port 110
+* **IMAP (Internet Message Access Protocol):** Port 143
 
-# 🧱 **The 7 Layers of the OSI Model**
 
-We’ll go **top to bottom**, from what the user sees (like a website) to the physical cable or Wi-Fi that carries the data.
 
-### ![OSI 7 Layers](https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-7-layers.jpg.webp)
+### **6. Presentation Layer**
 
----
+The Presentation Layer is responsible for translating data from the Application Layer into a format suitable for network transmission. It handles data encryption/decryption, compression/decompression, and formatting.
 
-### **7. Application Layer**  
-👤 **End-user Interface**
+**Examples of Presentation Layer protocols include:**
 
-> Think: Web browser, email app
+* **JPEG (Joint Photographic Experts Group):** Image compression
+* **MPEG (Moving Picture Experts Group):** Video and audio compression
+* **ASCII (American Standard Code for Information Interchange):** Text encoding
+* **MIME (Multipurpose Internet Mail Extensions):** Formatting emails with multimedia
+* **XDR (External Data Representation):** Cross-platform data exchange
 
-- Provides services to applications like **HTTP**, **FTP**, **SMTP**, **DNS**
-- Example: You type a URL in Chrome → the browser uses **HTTP** to get the webpage
 
----
 
-### **6. Presentation Layer**  
-🎭 **Data Translator**
+### **5. Session Layer**
 
-> Think: Language converter for devices
+The Session Layer manages communication sessions between two devices. It establishes, maintains, and terminates sessions and provides synchronization and checkpointing to ensure reliable data exchange.
 
-- Handles **encryption**, **compression**, and **data formatting**
-- Example: Converts JPEG image file into binary for transfer
+**Examples of Session Layer protocols include:**
 
----
+* **L2TP (Layer 2 Tunneling Protocol):** Used in VPNs, often with IPsec
+* **NetBIOS (Network Basic Input/Output System):** Enables file and print sharing over LANs
+* **PPTP (Point-to-Point Tunneling Protocol):** VPN protocol, often paired with MS-CHAP
+* **PAP (Password Authentication Protocol):** Basic authentication method, though less secure
 
-### **5. Session Layer**  
-🔗 **Connection Controller**
 
-> Think: Managing a phone call – start, talk, end
 
-- Opens, maintains, and ends **sessions**
-- Example: When you log in to a website, the session layer keeps the connection alive
+### **4. Transport Layer**
 
----
+The Transport Layer ensures reliable data transmission between endpoints. It provides error detection, flow control, and ensures that data arrives in the correct sequence.
 
-### **4. Transport Layer**  
-📦 **Reliable Delivery**
+Key protocols in this layer:
 
-> Think: FedEx making sure your package is safe and complete
+* **TCP (Transmission Control Protocol):** Reliable, connection-oriented communication
+* **UDP (User Datagram Protocol):** Fast, connectionless communication with minimal overhead
 
-- Breaks data into **segments**
-- Ensures **error checking**, **retransmission**, and **flow control**
-- Protocols: **TCP**, **UDP**
-- Example: You watch a YouTube video – it uses UDP to quickly stream
 
----
 
-### **3. Network Layer**  
-🗺️ **Path Finder**
+### **3. Network Layer**
 
-> Think: GPS for your data
+The Network Layer receives data from the Transport Layer and adds a header containing source and destination logical addresses (e.g., IP addresses). It determines the optimal path for data using routing protocols.
 
-- Breaks data into **packets**
-- Routes data using **IP addresses**
-- Protocols: **IP**, **ICMP**
-- Example: Sends a packet from your laptop in London to a server in New York
+**Examples of Network Layer protocols include:**
 
----
+* **IP (Internet Protocol):** Logical addressing, routing, fragmentation
+* **ICMP (Internet Control Message Protocol):** Error reporting and diagnostics
+* **ARP (Address Resolution Protocol):** Maps IP addresses to MAC addresses
+* **RIP (Routing Information Protocol):** Determines routing paths using distance vectors
 
-### **2. Data Link Layer**  
-🪢 **Local Delivery**
 
-> Think: Your house’s address and mailbox
 
-- Uses **MAC addresses** for device-to-device communication on the same network
-- Breaks packets into **frames**
-- Example: Your laptop sends data to your Wi-Fi router using its MAC address
+### **2. Data Link Layer**
 
----
+The Data Link Layer manages access to the physical medium and handles error detection and correction. It uses MAC addresses to direct frames to the correct destination and is the layer where switches operate.
 
-### **1. Physical Layer**  
-⚡ **Actual Connection**
+**Examples of Data Link Layer protocols include:**
 
-> Think: The wires and signals
+* **Ethernet (IEEE 802.3)**
+* **Wi-Fi (IEEE 802.11)**
+* **PPP (Point-to-Point Protocol)**
+* **HDLC (High-Level Data Link Control)**
 
-- Deals with **cables, Wi-Fi**, voltages, and binary data (0s and 1s)
-- Example: The Ethernet cable you plug into your computer
 
----
 
-# ✅ **Why the OSI Model Is Useful**
+### **1. Physical Layer**
 
-### For **Users & Operators:**
-- Understand what hardware/software is needed
-- Pinpoint which layer is causing a problem
-- Easier **troubleshooting**
+The Physical Layer transmits raw bits over a physical medium, such as copper wire or fiber optic cable. It defines the electrical, mechanical, and procedural specifications for data transmission.
 
-### For **Vendors & Developers:**
-- Build compatible hardware and software
-- Clearly define the **scope of functionality**
-- Ensure **interoperability**
+**Examples of Physical Layer technologies include:**
 
----
+* **Fiber optic cables** (various standards)
+* **DSL (Digital Subscriber Line)** technologies
 
-# 🔄 **OSI vs. TCP/IP Model**
-
-### ![OSI vs TCP/IP](https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-vs.-TCPIP-models.jpg.webp)
-
-### 📜 **History:**
-- **TCP/IP** was created **before OSI**, by the **US Department of Defense**
-- TCP/IP became the foundation of the **modern internet**
-
----
-
-## 🧩 **Main Differences**
-
-| Feature               | OSI Model (7 Layers)         | TCP/IP Model (4 Layers)            |
-|----------------------|------------------------------|------------------------------------|
-| **Purpose**           | Conceptual, universal model  | Practical, protocol-based model    |
-| **Layers**            | 7 layers                     | 4 layers                           |
-| **Use Today**         | Educational, troubleshooting | Real-world networks & Internet     |
-| **Flexibility**       | All layers defined clearly   | More compact, combines some layers |
-| **Application Layer** | Layers 5–7                   | One Application layer              |
-| **Link Layer**        | Layers 1–2                   | One Network Access layer           |
-
----
-
-### 📦 **TCP/IP Layers Overview:**
-
-| Layer               | OSI Equivalent                      | Function                             |
-|--------------------|-------------------------------------|--------------------------------------|
-| **Application**     | OSI Layers 5, 6, 7                  | Web, email, file transfers (HTTP, DNS) |
-| **Transport**       | OSI Layer 4                        | TCP, UDP – handles communication     |
-| **Internet**        | OSI Layer 3                        | IP addressing and routing            |
-| **Network Access**  | OSI Layers 1 & 2                  | Physical & MAC-level data transmission |
-
----
-
-# 🌐 **Real-Life Example: Sending a Message**
-
-> Let's say Alice sends a message to Bob via a messaging app:
-
-1. **Application Layer (7):** Alice types "Hi Bob!" in the app
-2. **Presentation (6):** The text is encrypted
-3. **Session (5):** A session is created with Bob's device
-4. **Transport (4):** Data is segmented with TCP
-5. **Network (3):** Each segment gets IP routing info
-6. **Data Link (2):** Each packet gets MAC address info
-7. **Physical (1):** Data is turned into electrical or Wi-Fi signals and sent
-
----
+![osi](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ZGnXoisgbx3EKeKtQyMVFg.png)
