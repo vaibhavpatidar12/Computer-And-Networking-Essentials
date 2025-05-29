@@ -1,6 +1,3 @@
-Here’s your content arranged in a clean and structured format for better readability and logical flow:
-
----
 
 # **COMPUTER**
 
@@ -93,6 +90,4 @@ A computer system consists of:
 * **Direct Current (DC)**: Constant flow of electricity in one direction.
 * **Alternating Current (AC)**: Flow of electricity that changes direction periodically.
 
----
 
-Let me know if you'd like this formatted into a PDF, Word file, or webpage!
